@@ -1,8 +1,7 @@
 from pytest_bdd import scenario, when, then
-import unittest
 
 
-@scenario('wishlist.feature', "Adding a product to the wishlist from its card")
+@scenario('../Features/wishlist.feature', "Adding a product to the wishlist from its card")
 def test_add_product_in_wishlist():
     pass
 
@@ -67,6 +66,3 @@ def go_to_wish_list(driver, product_card_page):
 def go_to_wish_list(driver, wishlist_page):
     wishlist_page.check_if_product_was_added_to_wish_list()
 
-
-if __name__ == '__main__':
-    unittest.main()

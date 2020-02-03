@@ -1,8 +1,7 @@
 from pytest_bdd import scenario, when, then
-import unittest
 
 
-@scenario('cart.feature', "Adding a product to the cart from its card")
+@scenario('../Features/cart.feature', "Adding a product to the cart from its card")
 def test_add_product_in_cart():
     pass
 
@@ -60,5 +59,3 @@ def save_cookies(driver, cart_page):
     cart_page.save_cookies()
 
 
-if __name__ == '__main__':
-    unittest.main()

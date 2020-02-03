@@ -1,8 +1,7 @@
 from pytest_bdd import scenario, when, then
-import unittest
 
 
-@scenario('promo_popup_form.feature', "Closing a form with a proposal to receive a promotional code")
+@scenario('../Features/promo_popup_form.feature', "Closing a form with a proposal to receive a promotional code")
 def test_close_popup_form():
     pass
 
@@ -42,6 +41,3 @@ def is_element_present(driver, products_list_page):
 def close_popup(driver, products_list_page):
     products_list_page.close_popup()
 
-
-if __name__ == '__main__':
-    unittest.main()
